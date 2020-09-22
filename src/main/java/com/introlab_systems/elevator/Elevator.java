@@ -47,12 +47,13 @@ public class Elevator {
      * {@code Thread.sleep(1500} is used only for
      * poor output :)
      *
-     * @throws InterruptedException Elevator at first floor, and it's empty
-     *                              calls {@link #loadEmptyElevator()}
-     *                              after that he will follow passenger's destination,
-     *                              unload them / load new one.
+     * @throws InterruptedException
+     * <p>Elevator at first floor, and it's empty
+     * calls {@link #loadEmptyElevator()}
+     * after that he will follow passenger's destination,
+     * unload them / load new one.
      *
-     *                              <p>If not full - will {@link #loadEnRoutePassengers(int)}
+     * <p>If not full - will {@link #loadEnRoutePassengers(int)}
      */
     public void start() throws InterruptedException {
         System.out.println("Empty elevator \n");
@@ -299,7 +300,7 @@ public class Elevator {
 
     /**
      * Iterates through passengers currently in elevator and
-     * fills {@link #destinations} fir passenger's destination floor.
+     * fills {@link #destinations} with passenger's destination floor.
      */
     public void calculateDestination() {
         passengersCabin.forEach(passenger -> destinations.add(passenger.getDestinationFloorNumber()));
