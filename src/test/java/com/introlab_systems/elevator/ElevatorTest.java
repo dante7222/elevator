@@ -3,7 +3,6 @@ package com.introlab_systems.elevator;
 import com.introlab_systems.building.Building;
 import com.introlab_systems.building.Floor;
 import com.introlab_systems.passenger.Passenger;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -193,11 +192,5 @@ class ElevatorTest {
         elevator.moveToFloor(5);
         elevator.biggestDestinationOnFloor();
         assertThat(elevator.getCurrentDirection()).isEqualTo("down");
-    }
-
-    @AfterEach
-    void tearDown() {
-        building.getFloors()
-                .removeAll(building.getFloors().subList(4, building.getFloors().size() - 1));
     }
 }

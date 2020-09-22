@@ -42,7 +42,6 @@ class PassengerTest {
 
     @Test
     void shouldLoadToElevator() {
-
         int size = firstFloor.getPassengers().size();
         firstFloor.getPassengers().peek().loadToElevator();
 
