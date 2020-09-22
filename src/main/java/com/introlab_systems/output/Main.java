@@ -20,7 +20,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Elevator's start will work until he have destinations");
+        System.out.println("Elevator will start work until he have destinations");
         System.out.println("after that type something and he will continue");
         System.out.println("type something");
 
